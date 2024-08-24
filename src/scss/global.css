@@ -1,0 +1,1691 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@keyframes textblink {
+  0% {
+    color: #0d7fe9;
+  }
+  50% {
+    color: #032196;
+  }
+  100% {
+    color: rgb(14, 133, 231);
+  }
+}
+@keyframes loader {
+  0% {
+    color: rgb(0, 0, 0);
+  }
+  50% {
+    color: rgb(226, 225, 225);
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}
+.loader-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-loader span:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  animation: loader 1s ease-in 0.1s infinite;
+}
+
+.main-loader span:nth-child(2) {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  animation: loader 1s ease-in 0.2s infinite;
+}
+
+.main-loader span:nth-child(3) {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  animation: loader 1s ease-in 0.3s infinite;
+}
+
+.main-loader span:nth-child(4) {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  animation: loader 1s ease-in 0.4s infinite;
+}
+
+.main-loader span:nth-child(5) {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  animation: loader 1s ease-in 0.5s infinite;
+}
+
+.main-loader span:nth-child(6) {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  animation: loader 1s ease-in 0.6s infinite;
+}
+
+.main-loader span:nth-child(7) {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  animation: loader 1s ease-in 0.7s infinite;
+}
+
+nav {
+  width: 100%;
+  height: 6rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(223, 220, 220);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  margin: 0 10rem;
+}
+.nav-section .menu {
+  display: none;
+}
+
+.navlink-sub-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 30vw;
+}
+.navlink-sub-section div {
+  margin-right: 2rem;
+}
+.navlink-sub-section .hide-navbar {
+  display: none;
+}
+
+.navlink {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #8a8989;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  text-decoration: none;
+}
+.navlink::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.2rem;
+  bottom: -0.5rem;
+  left: 0;
+  background-color: #34b7a7;
+  transition: width 0.3s ease-in;
+}
+.navlink:hover::before {
+  width: 100%;
+}
+
+.navlink.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  bottom: -0.5rem;
+  left: 0;
+  background-color: #34b7a7;
+}
+
+.logo-element a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.5rem;
+  color: #575555;
+  padding: 2rem;
+}
+
+.nav-social-link-section {
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-social-link-section div {
+  position: relative;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.nav-social-link-section div a {
+  position: absolute;
+  transform: scale(1.2, 1.2);
+  inset: 1rem;
+  color: #696a6d;
+  border-radius: 50%;
+}
+.nav-social-link-section div a:hover {
+  color: #0d7fe9;
+}
+
+footer {
+  background-color: rgb(228, 225, 225);
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 100vw;
+  padding: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+footer .main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: #383838;
+}
+footer .main-footer .left-footer-panel {
+  padding-left: 2rem;
+  width: 30%;
+}
+footer .main-footer .left-footer-panel p a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #383838;
+}
+footer .main-footer .left-footer-panel p a:hover {
+  text-decoration: underline;
+  color: #2e2e2e;
+}
+footer .main-footer .right-footer-panel {
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 70%;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+footer .main-footer .right-footer-panel .info-footer-note div p {
+  line-height: 2rem;
+}
+footer .main-footer .right-footer-panel .info-footer-note div p a {
+  text-decoration: none;
+  color: #383838;
+}
+footer .main-footer .right-footer-panel .info-footer-note div p a:hover {
+  text-decoration: underline;
+  color: #2e2e2e;
+}
+footer .main-footer .right-footer-panel .contact-footer-note p {
+  line-height: 2rem;
+}
+footer .main-footer .right-footer-panel .contact-footer-note p a {
+  text-decoration: none;
+  color: #383838;
+}
+footer .main-footer .right-footer-panel .contact-footer-note p a:hover {
+  text-decoration: underline;
+  color: #2e2e2e;
+}
+
+section.about-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 10rem 5rem;
+  font-family: "Open Sans", sans-serif;
+  color: #707070;
+}
+
+.about-section #about-id {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  -webkit-text-decoration: underline solid #34b7a7;
+          text-decoration: underline solid #34b7a7;
+}
+
+.about-image-container {
+  width: 20%;
+  margin-top: 2rem;
+}
+.about-image-container img {
+  width: 20rem;
+  height: 25rem;
+}
+
+.about-details-container {
+  width: 50%;
+}
+.about-details-container #profile-role {
+  animation-name: textblink;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.about-sub {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-title {
+  font-size: 2.6rem;
+}
+
+.title p {
+  margin: 2rem 0;
+}
+
+.personal-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal-details .detail-1 ul li, .personal-details .detail-2 ul li {
+  list-style-type: none;
+}
+.personal-details .detail-1 ul li span, .personal-details .detail-2 ul li span {
+  font-weight: bold;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills-section h2 {
+  font-size: 2.6rem;
+  margin: 2rem 0;
+  -webkit-text-decoration: underline solid #34b7a7;
+          text-decoration: underline solid #34b7a7;
+}
+.skills-section .skills-containers {
+  width: 80%;
+  border: 0.2rem solid rgb(201, 200, 200);
+  border-radius: 0.8rem;
+  margin: 4rem;
+  padding: 2rem;
+}
+.skills-section .skills-containers .skills-container-tier {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(15rem);
+  transition: opacity 3s ease-out, transform 1s ease-out;
+}
+
+section.resume-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 10rem 5rem;
+  font-family: "Open Sans", sans-serif;
+  color: #707070;
+}
+section.resume-main-container #headline-title {
+  text-align: center;
+  -webkit-text-decoration: underline solid #34b7a7;
+          text-decoration: underline solid #34b7a7;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+}
+section.resume-main-container p#headline-desc {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 2.2rem;
+}
+section.resume-main-container .resume-details-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+section.resume-main-container .resume-details-desc .left-side-panel {
+  width: 50%;
+  padding-top: 4rem;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .basic-details {
+  margin-bottom: 2rem;
+  position: relative;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .basic-details h2 {
+  font-size: 2.6rem;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details {
+  padding-left: 4rem;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details p {
+  font-size: 1.8rem;
+  font-style: italic;
+  line-height: 2rem;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details::before {
+  content: "";
+  width: 0.3rem;
+  position: absolute;
+  height: calc(100% - 6.5rem);
+  top: 6.5rem;
+  left: 1rem;
+  background-color: #34b7a7;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .basic-details #resume-name {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #34b7a7;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .basic-details #resume-name::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  border: 0.3rem solid #34b7a7;
+  border-radius: 50%;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .basic-details ul#basic-details-list {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .educational-details {
+  margin-bottom: 4rem;
+  position: relative;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .educational-details h2 {
+  font-size: 2.6rem;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .educational-details #education-identifier {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list {
+  padding-left: 4rem;
+  position: relative;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 {
+  position: relative;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 h2, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 h2, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 h2 {
+  font-size: 2rem;
+  color: #34b7a7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 h2::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 h2::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 h2::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 1rem;
+  left: -4rem;
+  border: 0.3rem solid #34b7a7;
+  border-radius: 50%;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3::before {
+  content: "";
+  width: 0.3rem;
+  position: absolute;
+  height: calc(100% - 3rem);
+  top: 3rem;
+  left: -3rem;
+  background-color: #34b7a7;
+}
+section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3 h4 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 2.2rem;
+  color: #707070;
+}
+section.resume-main-container .resume-details-desc .right-side-panel {
+  width: 50%;
+  padding: 4rem;
+}
+section.resume-main-container .resume-details-desc .right-side-panel h2 {
+  font-size: 2.6rem;
+}
+section.resume-main-container .resume-details-desc .right-side-panel .experience-block {
+  padding-left: 4rem;
+  position: relative;
+}
+section.resume-main-container .resume-details-desc .right-side-panel .experience-block div#ed-date {
+  margin-bottom: 1rem;
+}
+section.resume-main-container .resume-details-desc .right-side-panel .experience-block::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  border: 0.3rem solid #34b7a7;
+  border-radius: 50%;
+}
+section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-1::before {
+  content: "";
+  width: 0.3rem;
+  position: absolute;
+  height: calc(100% - 3.5rem);
+  top: 3.5rem;
+  left: 1rem;
+  background-color: #34b7a7;
+}
+section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-2::before {
+  content: "";
+  width: 0.3rem;
+  position: absolute;
+  height: calc(100% - 3.5rem);
+  top: 3.5rem;
+  left: 1rem;
+  background-color: #34b7a7;
+}
+section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-3::before {
+  content: "";
+  width: 0.3rem;
+  position: absolute;
+  height: calc(100% - 3.5rem);
+  top: 3.5rem;
+  left: 1rem;
+  background-color: #34b7a7;
+}
+section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-4::before {
+  content: "";
+  width: 0.3rem;
+  position: absolute;
+  height: calc(100% - 3.5rem);
+  top: 3.5rem;
+  left: 1rem;
+  background-color: #34b7a7;
+}
+section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-5::before {
+  content: "";
+  width: 0.3rem;
+  position: absolute;
+  height: calc(100% - 3.5rem);
+  top: 3.5rem;
+  left: 1rem;
+  background-color: #34b7a7;
+}
+section.resume-main-container .resume-details-desc .right-side-panel .experience-block h3 {
+  font-size: 2rem;
+  color: #34b7a7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+section.resume-main-container .resume-details-desc .right-side-panel .experience-block #designation {
+  font-size: 1.8rem;
+  font-style: italic;
+  padding-bottom: 1rem;
+}
+section.resume-main-container .resume-details-desc .right-side-panel .experience-block ul {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+div#ed-date {
+  background-color: #e1fffb;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5rem;
+  font-family: serif;
+  border-radius: 0.4rem;
+  font-size: 1.8rem;
+}
+
+section.contact-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 10rem 5rem;
+  font-family: "Open Sans", sans-serif;
+}
+section.contact-main-container .inner-contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+}
+section.contact-main-container .inner-contact-container div h2 {
+  text-align: center;
+  -webkit-text-decoration: underline solid rgb(2, 214, 2);
+          text-decoration: underline solid rgb(2, 214, 2);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+}
+section.contact-main-container .inner-contact-container div p {
+  font-size: 2rem;
+  color: #707070;
+}
+section.contact-main-container .inner-contact-container .google-map-iframe {
+  padding: 4rem 0;
+}
+section.contact-main-container .inner-contact-container .google-map-iframe iframe {
+  height: 30rem;
+}
+section.contact-main-container .inner-contact-container .contact-details-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .user-detail {
+  width: 35%;
+  padding: 2rem 0;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .user-detail .user-markers {
+  display: flex;
+  flex-direction: column;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .user-detail .user-markers .user-marker-component {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 3rem;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .user-detail .user-markers .user-marker-component .marker {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem;
+  background-color: #e1fffb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #34b7a7;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .user-detail .user-markers .user-marker-component .marker:hover {
+  color: #fff;
+  background-color: #34b7a7;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .user-detail .user-markers .user-marker-component .marker-details #marker-name {
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .user-detail .user-markers .user-marker-component .marker-details #marker-desc {
+  font-size: 1.4rem;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form {
+  width: 65%;
+  padding: 2rem 4rem;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div input {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  outline: 0.1rem solid rgb(214, 214, 214);
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  border-radius: 0.4rem;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div input:focus {
+  outline: 0.1rem solid #34b7a7;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject div {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject div input {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  outline: 0.1rem solid rgb(214, 214, 214);
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  border-radius: 0.4rem;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject div input:focus {
+  outline: 0.1rem solid #34b7a7;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div textarea {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  outline: 0.1rem solid rgb(214, 214, 214);
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  border-radius: 0.4rem;
+  padding-top: 1rem;
+  height: 10rem;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div textarea:focus {
+  outline: 0.1rem solid #34b7a7;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .btn-msg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .btn-msg-container .btn-message {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #fff;
+  background-color: #34b7a7;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .btn-msg-container .btn-message:hover {
+  background-color: #55d8c9;
+}
+section.contact-main-container .inner-contact-container .contact-details-section .contact-form .btn-msg-container .res-status {
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.landing-page::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  height: 100vh;
+  inset: 0;
+}
+
+.landing-container {
+  width: 50rem;
+  height: 20rem;
+  font-size: 2rem;
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing-container .profile-picture img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.landing-container h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #2e2e2e;
+  font-size: 2.5rem;
+}
+.landing-container #profile-desc {
+  margin: 0.5rem 0 2rem 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #707070;
+}
+.landing-container .btn-about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 10rem;
+  height: 6rem;
+  color: #fff;
+  background-color: #34b7a7;
+  outline: none;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.landing-container .btn-about-me #download-icon {
+  padding-left: 0.5rem;
+}
+.landing-container .btn-about-me:hover {
+  background-color: #55d8c9;
+}
+
+.zoom-it {
+  transform: scale(1.5, 1.5);
+  transition: 1s;
+}
+
+section.services-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 10rem 5rem;
+  font-family: "Open Sans", sans-serif;
+}
+section.services-main-container #headline-title {
+  text-align: center;
+  -webkit-text-decoration: underline solid #34b7a7;
+          text-decoration: underline solid #34b7a7;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+}
+section.services-main-container p#headline-desc {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 2.2rem;
+  color: #707070;
+}
+section.services-main-container .services-card-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10rem;
+  padding-left: 0;
+}
+section.services-main-container .services-card-section .service-card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 36rem;
+  height: 28rem;
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  transition: 0.2s;
+}
+section.services-main-container .services-card-section .service-card .img-content img {
+  display: block;
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-bottom: 1rem;
+  transition: 1s;
+}
+section.services-main-container .services-card-section .service-card .img-content img:hover {
+  transform: scale(1.5, 1.5);
+}
+section.services-main-container .services-card-section .service-card .card-content {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  width: 34rem;
+  height: 15%;
+  padding: 2.2rem;
+  overflow: hidden;
+  transition: 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section.services-main-container .services-card-section .service-card .card-content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+section.services-main-container .services-card-section .service-card .card-content .btn-services {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #fff;
+  background-color: #34b7a7;
+}
+section.services-main-container .services-card-section .service-card .card-content .btn-services:hover {
+  background-color: #55d8c9;
+}
+section.services-main-container .services-card-section .service-card .card-content:hover {
+  height: 50%;
+  transition: 0.7s;
+}
+
+.notfound-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notfound-page .notfound-container {
+  text-align: center;
+}
+.notfound-page .notfound-container h1 {
+  font-size: 4rem;
+}
+.notfound-page .notfound-container #notfound-desc {
+  margin: 1rem 0;
+  font-family: "Raleway", sans-serif;
+  color: #a09f9f;
+  font-size: 2.5rem;
+}
+.notfound-page .notfound-container #timer {
+  margin-bottom: 2rem;
+  font-family: "Raleway", sans-serif;
+  color: rgb(253, 95, 95);
+  font-size: 3.5rem;
+}
+
+.btn-circle-up {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  right: 10%;
+  bottom: 10%;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: #34b7a7;
+  border-radius: 0.5rem;
+}
+.btn-circle-up svg {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+@media (max-width: 820px) {
+  .nav-section {
+    margin: 0 1rem;
+  }
+  .nav-section .nav-link-sections {
+    width: 40rem;
+  }
+  .nav-section .menu {
+    display: none;
+  }
+  footer {
+    width: 100vw;
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+  .landing-page {
+    width: 100vw;
+    height: 100vh;
+  }
+  .landing-page .landing-container {
+    width: 40rem;
+  }
+  .landing-page .landing-container #profile-desc {
+    margin: 0.5rem 0 2rem 0;
+    font-family: "Raleway", sans-serif;
+    color: #555555;
+    font-size: 1.4rem;
+  }
+  section.about-main-container {
+    margin: 10rem 4rem;
+    font-size: 2.4rem;
+  }
+  section.about-main-container .about-section #about-id {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    -webkit-text-decoration: underline solid #34b7a7;
+            text-decoration: underline solid #34b7a7;
+  }
+  section.about-main-container .about-section .headline p {
+    text-align: center;
+  }
+  section.about-main-container .about-section .about-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  section.about-main-container .about-section .about-sub .about-image-container {
+    width: 90%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  section.about-main-container .about-section .about-sub .about-image-container img {
+    text-align: center;
+    width: 32rem;
+    height: 35rem;
+  }
+  section.about-main-container .about-section .about-sub .about-details-container {
+    width: 90%;
+  }
+  section.about-main-container .about-section .about-sub .about-details-container div h2 {
+    text-align: center;
+  }
+  .personal-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .skills-section h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .skills-section .headline p {
+    text-align: center;
+  }
+  .skills-section .skills-containers {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .skills-section .skills-containers .skills-container-tier {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.resume-main-container {
+    margin: 10rem 4rem;
+    padding: 0 1rem;
+  }
+  section.resume-main-container p#headline-desc {
+    font-weight: normal;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #707070;
+  }
+  section.resume-main-container .resume-details-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .basic-details {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details {
+    padding-left: 4rem;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details p {
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 2.2rem;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 6.5rem);
+    top: 6.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .basic-details #resume-name {
+    padding-top: 0;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details {
+    margin-bottom: 4rem;
+    position: relative;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details h2 {
+    font-size: 2.6rem;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details #education-identifier {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list {
+    padding-left: 4rem;
+    position: relative;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 h2, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 h2, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 h2 {
+    padding-top: 0.5rem;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1:before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3rem);
+    top: 3rem;
+    left: -3rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1 h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    color: #707070;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2:before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3rem);
+    top: 3rem;
+    left: -3rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2 h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    color: #707070;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3:before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3rem);
+    top: 3rem;
+    left: -3rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3 h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    color: #707070;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel {
+    width: 100%;
+    padding: 0;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-1::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3.5rem);
+    top: 3.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-2::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3.5rem);
+    top: 3.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-3::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3.5rem);
+    top: 3.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-4::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3.5rem);
+    top: 3.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-5::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3.5rem);
+    top: 3.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block h3 {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block #designation {
+    font-size: 2rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block ul {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  section.services-main-container {
+    font-size: 2rem;
+    margin: 10rem 4rem;
+    font-family: "Open Sans", sans-serif;
+    padding: 0 1rem;
+  }
+  section.services-main-container p#headline-desc {
+    text-align: center;
+  }
+  section.services-main-container .services-card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 1rem;
+    padding-left: 0;
+  }
+  section.services-main-container .services-card-section .service-card {
+    width: 32rem;
+    height: 28rem;
+    margin-top: 2rem;
+  }
+  section.services-main-container .services-card-section .service-card .card-content {
+    width: 30rem;
+  }
+  section.services-main-container .services-card-section .service-card .img-content img {
+    height: 28rem;
+  }
+  section.contact-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 10rem 4rem;
+    font-family: "Open Sans", sans-serif;
+  }
+  section.contact-main-container .inner-contact-container div h2 {
+    text-align: center;
+    -webkit-text-decoration: underline solid #34b7a7;
+            text-decoration: underline solid #34b7a7;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+  }
+  section.contact-main-container .inner-contact-container div p {
+    text-align: center;
+    font-size: 2rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .user-detail {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .user-detail .user-markers {
+    display: flex;
+    flex-direction: column;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .user-detail .user-markers .user-marker-component {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .user-detail .user-markers .user-marker-component .marker-details #marker-name {
+    text-align: left;
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .user-detail .user-markers .user-marker-component .marker-details #marker-desc {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div input {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    outline: 0.1rem solid rgb(214, 214, 214);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border-radius: 0.4rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div input:focus {
+    outline: 0.1rem solid #34b7a7;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject div {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject div input {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    outline: 0.1rem solid rgb(214, 214, 214);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border-radius: 0.4rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject div input:focus {
+    outline: 0.1rem solid #34b7a7;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div textarea {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    outline: 0.1rem solid rgb(214, 214, 214);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border-radius: 0.4rem;
+    padding-top: 1rem;
+    height: 10rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div textarea:focus {
+    outline: 0.1rem solid #34b7a7;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .btn-msg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .btn-msg-container .btn-message {
+    width: 12rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+    background-color: #34b7a7;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .btn-msg-container .btn-message:hover {
+    background-color: #55d8c9;
+  }
+}
+@media (max-width: 420px) {
+  nav.nav-main-header {
+    width: 100vw;
+  }
+  nav.nav-main-header .nav-section {
+    width: 40rem;
+    margin: 0 2rem;
+  }
+  nav.nav-main-header .nav-section .nav-logo-section div a {
+    font-size: 2.5rem;
+  }
+  nav.nav-main-header .nav-section .nav-social-link-section {
+    width: 15rem;
+    margin-left: 1rem;
+  }
+  nav.nav-main-header div.menu {
+    display: block;
+  }
+  .nav-link-sections {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    background-color: rgba(9, 9, 9, 0.9);
+  }
+  .nav-link-sections .navlink-sub-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    color: black;
+    width: 85vw;
+    height: 80vh;
+    margin-top: 4rem;
+    padding: 3rem 3rem;
+    border-radius: 1rem;
+  }
+  .nav-link-sections .navlink-sub-section .hide-navbar {
+    margin-top: 5rem;
+    display: block;
+  }
+  .nav-link-sections .navlink-sub-section .nav-elements {
+    margin-bottom: 2rem;
+  }
+  footer {
+    width: 100vw;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  footer .main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  footer .main-footer .left-footer-panel {
+    padding-left: 0;
+    width: 100%;
+  }
+  footer .main-footer .right-footer-panel {
+    margin-top: 2rem;
+    padding-right: 0;
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 1.4rem;
+    position: relative;
+  }
+  footer .main-footer .right-footer-panel::before {
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background-color: #b1adad;
+    position: absolute;
+    top: -20%;
+  }
+  footer .main-footer .right-footer-panel .contact-footer-note {
+    margin-left: 2rem;
+  }
+  .landing-page .landing-container {
+    width: 20rem;
+  }
+  .landing-page .landing-container #profile-desc {
+    font-size: 1.2rem;
+  }
+  section.about-main-container {
+    margin: 10rem 2rem;
+    font-size: 1.8rem;
+  }
+  section.about-main-container .about-section .about-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.about-main-container .about-section .about-sub .about-image-container {
+    width: 32rem;
+    padding: 2rem 0;
+  }
+  section.about-main-container .about-section .about-sub .about-details-container {
+    width: 32rem;
+  }
+  .personal-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  section.resume-main-container {
+    margin: 10rem 1rem;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details p {
+    font-size: 1.6rem;
+    font-style: italic;
+    line-height: 2.2rem;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 6.5rem);
+    top: 6.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list {
+    padding-left: 4rem;
+    position: relative;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1:before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3rem);
+    top: 3rem;
+    left: -3rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1 h4 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    color: #707070;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2:before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3rem);
+    top: 3rem;
+    left: -3rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2 h4 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    color: #707070;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3:before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3rem);
+    top: 3rem;
+    left: -3rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3 h4, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3 h3, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3 h4 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    color: #707070;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-1::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3.5rem);
+    top: 3.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-2::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3.5rem);
+    top: 3.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-3::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3.5rem);
+    top: 3.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-4::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3.5rem);
+    top: 3.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-5::before {
+    content: "";
+    width: 0.3rem;
+    position: absolute;
+    height: calc(100% - 3.5rem);
+    top: 3.5rem;
+    left: 1rem;
+    background-color: #34b7a7;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block #designation {
+    font-size: 1.8rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+  }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block ul {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  section.services-main-container {
+    margin: 10rem 1rem;
+  }
+  section.services-main-container .services-card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  section.contact-main-container {
+    margin: 10rem 1rem;
+  }
+  section.contact-main-container .inner-contact-container div p {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .user-detail .user-markers .user-marker-component .marker-details #marker-desc {
+    font-size: 1.4rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div input {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    outline: 0.1rem solid rgb(214, 214, 214);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border-radius: 0.4rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div input:focus {
+    outline: 0.1rem solid #34b7a7;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject div input {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    outline: 0.1rem solid rgb(214, 214, 214);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border-radius: 0.4rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject div input:focus {
+    outline: 0.1rem solid #34b7a7;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div textarea {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    outline: 0.1rem solid rgb(214, 214, 214);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border-radius: 0.4rem;
+    padding-top: 1rem;
+    height: 10rem;
+  }
+  section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div textarea:focus {
+    outline: 0.1rem solid #34b7a7;
+  }
+}/*# sourceMappingURL=global.css.map */

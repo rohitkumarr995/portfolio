@@ -1,0 +1,1 @@
+export const serverURL = "https://script.google.com/macros/s/AKfycbymnEwLPFe8cxmHjAZ4uhcKGMGbfih_w1dPr4lATxpftZZA864hbBCm-uavGHM_dlIv/exec"
