@@ -93,7 +93,7 @@ const About = () => {
                       <li>
                         <span>Website</span> :{" "}
                         <Link
-                          to={"https://myportfolio-rohit-weld.vercel.app/home"}
+                          to={"https://portfolio-rohit-red.vercel.app/home"}
                         >
                           Visit Me
                         </Link>

@@ -50,7 +50,7 @@ const Project = () =>{
                     </div>
                     <div className="card-content">
                         <h1 className='card-heading'>Portfolio</h1>
-                        <Button onclick={()=>handleNavigation('https://myportfolio-rohit-weld.vercel.app/home')} className="btn-services">Visit Me</Button>
+                        <Button onclick={()=>handleNavigation('https://portfolio-rohit-red.vercel.app/home')} className="btn-services">Visit Me</Button>
                     </div>
                 </div>
             </div>
