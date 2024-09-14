@@ -66,8 +66,8 @@ const About = () => {
           <h2 id="about-id">About</h2>
           <div className="headline">
             <p>
-              Skilled professional with 2.5 years of experience in automation
-              testing and ReactJS development. Expertise in designing and
+              Skilled professional with 2.5 years of experience in ReactJS development and automation
+              testing. Expertise in designing and
               maintaining ReactJS applications and automating test scripts.
               Proven ability to improve software quality and streamline testing
               processes in Agile environments.
@@ -82,7 +82,7 @@ const About = () => {
               <div className="title">
                 <h2 className="about-title">Frontend Developer</h2>
                 <p className="description">
-                  I am a passionate <span id="profile-role">{text}</span>.
+                  I am a <span id="profile-role">{text}</span>.
                 </p>
                 <div className="personal-details">
                   <div className="detail-1">

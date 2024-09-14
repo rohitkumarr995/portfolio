@@ -75,7 +75,7 @@ const Contact = () => {
                         scrolling="no"
                         marginheight="0"
                         marginwidth="0"
-                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sector-41,%20Noida,%20Uttar%20Pradesh%20India+(Portfolio)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sector-167,%20Noida,%20Uttar%20Pradesh,%20India%20201306+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                     >
                     <Link to="https://www.gps.ie/">gps tracker sport</Link>
                     </iframe>
@@ -93,7 +93,7 @@ const Contact = () => {
                             </div>
                             <div className="marker-details">
                                 <p id="marker-name">Location</p>
-                                <p id="marker-desc">Sector-41, Noida, Uttar Pradesh, India 201303</p>
+                                <p id="marker-desc">Sector-167, Noida, Uttar Pradesh, India 201306</p>
                             </div>
                         </div>
                         <div className="user-marker-component">

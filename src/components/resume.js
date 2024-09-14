@@ -17,8 +17,8 @@ const Resume = () => {
         <div className="resume-headline-desc">
           <h2 id="headline-title">Resume</h2>
           <p id="headline-desc">
-            Skilled professional with 2.5 years of experience in automation
-            testing and ReactJS development. Expertise in designing and
+            Skilled professional with 2.5 years of experience in ReactJS development and automation
+            testing. Expertise in designing and
             maintaining ReactJS applications and automating test scripts. Proven
             ability to improve software quality and streamline testing processes
             in Agile environments.
@@ -31,8 +31,8 @@ const Resume = () => {
               <div className="summary-details">
                 <h3 id="resume-name">Rohit Kumar</h3>
                 <p>
-                  Skilled professional with over 2.5 years of experience in
-                  automation testing and expertise in ReactJS, Redux Toolkit,
+                  Skilled professional with over 2.5 years of experience in ReactJS developent,
+                  and automation testing. Expertise in ReactJS, Redux Toolkit,
                   HTML, CSS (SCSS), and JavaScript. Skilled in API integration
                   using Axios, and proficient with GitHub for version control.
                   Expertise in designing and maintaining ReactJS applications
@@ -41,7 +41,7 @@ const Resume = () => {
                   environments.
                 </p>
                 <ul id="basic-details-list">
-                  <li>Noida, Uttar Pradesh, India</li>
+                  <li>Sector-167, Noida, Uttar Pradesh, India</li>
                   <li>+91-7906916680</li>
                   <li>rkrs227@gmail.com</li>
                 </ul>
@@ -106,7 +106,6 @@ const Resume = () => {
                     streamlining testing processes.
                   </li>
                   <li>
-                    {" "}
                     Collaborate with teams to deliver high-quality software,
                     aligning with Agile methodologies.
                   </li>

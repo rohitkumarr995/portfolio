@@ -27,7 +27,7 @@ const Footer = () =>{
                         <div className="contact-footer-note">
                             <p>Email: <Link to="mailto:rkrs227@gmail.com">rkrs227@gmail.com</Link></p>
                             <p>Phone: (+91) 7906916680</p>
-                            <p>Location: Sector-41, Noida, Uttar Pradesh, India 201303</p>                                        
+                            <p>Location: Sector-167, Noida, Uttar Pradesh, India 201306</p>                                        
                         </div>
                     </div>
                 </div>
