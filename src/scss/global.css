@@ -268,8 +268,9 @@ section.about-main-container {
   margin-top: 2rem;
 }
 .about-image-container img {
-  width: 20rem;
+  width: 25rem;
   height: 25rem;
+  border-radius: 1rem;
 }
 
 .about-details-container {

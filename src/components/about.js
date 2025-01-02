@@ -66,11 +66,11 @@ const About = () => {
           <h2 id="about-id">About</h2>
           <div className="headline">
             <p>
-              Skilled professional with 2.5 years of experience in ReactJS development and automation
-              testing. Expertise in designing and
-              maintaining ReactJS applications and automating test scripts.
-              Proven ability to improve software quality and streamline testing
-              processes in Agile environments.
+            ReactJS Developer specializing in building dynamic, responsive, and scalable web applications using ReactJS and
+            Redux Toolkit. Proficient in developing high-performance user interfaces, optimizing application performance, and
+            integrating RESTful APIs. Strong understanding of front-end best practices, with expertise in modern JavaScript
+            frameworks. Experienced in delivering solutions in Agile environments and continuously improving software quality.
+
             </p>
           </div>
 

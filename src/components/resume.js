@@ -17,8 +17,7 @@ const Resume = () => {
         <div className="resume-headline-desc">
           <h2 id="headline-title">Resume</h2>
           <p id="headline-desc">
-            Skilled professional with 2.5 years of experience in ReactJS development and automation
-            testing. Expertise in designing and
+            Skilled professional ReactJS developer, expertise in designing and
             maintaining ReactJS applications and automating test scripts. Proven
             ability to improve software quality and streamline testing processes
             in Agile environments.
@@ -31,14 +30,11 @@ const Resume = () => {
               <div className="summary-details">
                 <h3 id="resume-name">Rohit Kumar</h3>
                 <p>
-                  Skilled professional with over 2.5 years of experience in ReactJS developent,
-                  and automation testing. Expertise in ReactJS, Redux Toolkit,
-                  HTML, CSS (SCSS), and JavaScript. Skilled in API integration
-                  using Axios, and proficient with GitHub for version control.
-                  Expertise in designing and maintaining ReactJS applications
-                  and automating test scripts. Proven ability to improve
-                  software quality and streamline testing processes in Agile
-                  environments.
+                ReactJS Developer specializing in building dynamic, responsive, and scalable web applications using ReactJS and
+                Redux Toolkit. Proficient in developing high-performance user interfaces, optimizing application performance, and
+                integrating RESTful APIs. Strong understanding of front-end best practices, with expertise in modern JavaScript
+                frameworks. Experienced in delivering solutions in Agile environments and continuously improving software quality.
+
                 </p>
                 <ul id="basic-details-list">
                   <li>Sector-167, Noida, Uttar Pradesh, India</li>
@@ -98,32 +94,21 @@ const Resume = () => {
                 <div id="designation">Systems Engineer</div>
                 <ul>
                   <li>
-                    Develop and maintain responsive web applications using
-                    ReactJS, enhancing user engagement.
+                  Develop and maintain responsive web applications using ReactJS, Redux Toolkit, and React Router
+DOM, enabling efficient state management and seamless navigation.
                   </li>
                   <li>
-                    Automate testing with Jest, Selenium, and Postman,
-                    streamlining testing processes.
+                  Perform thorough testing of web applications using Jest and Postman to ensure functionality and stability.
                   </li>
                   <li>
-                    Collaborate with teams to deliver high-quality software,
-                    aligning with Agile methodologies.
+                  Troubleshot and resolve complex issues in development and testing phases, ensuring smooth software releases.
                   </li>
                   <li>
-                    Execute unit, integration, and regression testing, reducing
-                    post-release issues.
+                  Utilize GitHub for version control, ensuring smooth collaboration and maintaining project integrity.
                   </li>
                   <li>
-                    Enhance automation frameworks, accelerating testing cycles
-                    and improving software updates.
-                  </li>
-                  <li>
-                    Troubleshot and resolve complex issues in development and
-                    testing phases, ensuring smooth software releases.
-                  </li>
-                  <li>
-                    Implement and maintain effective test cases to ensure
-                    comprehensive coverage.
+                  Participate in Agile development practices, including daily stand-ups, sprint planning, and code
+reviews.
                   </li>
                 </ul>
               </div>
